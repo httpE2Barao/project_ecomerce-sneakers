@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { Header } from "./components/header";
 import { Menu } from "./components/menu";
-import { Poster } from "./components/poster";
+import { ProductPoster } from "./components/poster";
 import { ProductInfo } from "./components/info";
 
 export interface MenuProps {
@@ -17,7 +17,7 @@ export default function Home() {
     <>
       <Menu isOpen={isOpen} setIsOpen={setIsOpen} />
       <Header isOpen={isOpen} setIsOpen={setIsOpen} />
-      <Poster />
+      <ProductPoster />
       <ProductInfo />
     </>
   )
