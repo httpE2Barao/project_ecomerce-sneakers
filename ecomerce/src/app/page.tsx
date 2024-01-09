@@ -3,7 +3,14 @@ import { useState } from "react";
 import { Header } from "./components/header";
 import { Menu } from "./components/menu";
 import { ProductPoster } from "./components/poster";
-import { ProductInfo } from "./components/info";
+
+export const ItensMenu = [
+  'Collections',
+  'Men',
+  'Women',
+  'About',
+  'Contact'
+]
 
 export interface MenuProps {
   isOpen: boolean;
@@ -14,11 +21,10 @@ export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <>
+    <article className="lg:px-32">
       <Menu isOpen={isOpen} setIsOpen={setIsOpen} />
       <Header isOpen={isOpen} setIsOpen={setIsOpen} />
       <ProductPoster />
-      <ProductInfo />
-    </>
+    </article>
   )
 }

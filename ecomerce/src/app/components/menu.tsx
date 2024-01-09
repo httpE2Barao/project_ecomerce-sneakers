@@ -1,13 +1,6 @@
 "use client";
 import { MenuProps } from "../page";
-
-const ItensMenu = [
-    'Collections',
-    'Men',
-    'Women',
-    'About',
-    'Contact'
-]
+import { ItensMenu } from "../page";
 
 export const Menu = ({ isOpen, setIsOpen }: MenuProps) => {
     return (
